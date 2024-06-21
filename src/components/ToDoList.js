@@ -16,15 +16,32 @@ const TodoList = () => {
     <p className='text-sidebar-text'>Edit <FaPen className='ml-2' /></p>
     </div>
     </div>
-      <ul>
-        
-        <li className="mb-2"><input type="checkbox" className="mr-2 bg-yellow border-dark-yellow text-yellow focus:ring-dark-yellow" /> Join UI Design Class with my friend</li>
-        <span className='text-sidebar-text ml-6'>Sun, 09:00 AM</span>
-        <li className="mb-2"><input type="checkbox" className="mr-2 bg-yellow border-dark-yellow text-yellow focus:ring-dark-yellow" /> do the assignment given by coach Dery</li>
-        <span className='text-sidebar-text ml-6'>Sun, 08:00 AM</span>
-        <li className="mb-2"><input type="checkbox" className="mr-2 bg-yellow border-dark-yellow text-yellow focus:ring-dark-yellow" /> Upgrade to premium</li>
-        <span className='text-sidebar-text ml-6'>Sun, 07:00 AM</span>
-      </ul>
+    <ul>
+    <li className="mb-2">
+        <label for="checkbox1">
+            <input type="checkbox" id="checkbox1" className="mr-2 bg-yellow border-dark-yellow text-yellow focus:ring-dark-yellow" title="Join UI Design Class with my friend" />
+            Join UI Design Class with my friend
+        </label>
+    </li>
+    <span className='text-sidebar-text ml-6'>Sun, 09:00 AM</span>
+
+    <li className="mb-2">
+        <label for="checkbox2">
+            <input type="checkbox" id="checkbox2" className="mr-2 bg-yellow border-dark-yellow text-yellow focus:ring-dark-yellow" title="Do the assignment given by coach Dery" />
+            Do the assignment given by coach Dery
+        </label>
+    </li>
+    <span className='text-sidebar-text ml-6'>Sun, 08:00 AM</span>
+
+    <li className="mb-2">
+        <label for="checkbox3">
+            <input type="checkbox" id="checkbox3" className="mr-2 bg-yellow border-dark-yellow text-yellow focus:ring-dark-yellow" title="Upgrade to premium" />
+            Upgrade to premium
+        </label>
+    </li>
+    <span className='text-sidebar-text ml-6'>Sun, 07:00 AM</span>
+</ul>
+
     </div>
 
 <div className="bg-white rounded-lg mt-4 p-4 w-2/3 ">
