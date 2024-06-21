@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaArrowUp, FaCalendarAlt, FaClock, FaPen } from 'react-icons/fa';
+import { FaPen } from 'react-icons/fa';
 
 const TodoList = () => {
   const leaders = [
@@ -44,7 +44,7 @@ const TodoList = () => {
           {leaders.map((leader) => (
             <tr key={leader.rank} >
               <td className="px-3 py-3">{leader.rank}</td>
-              <div class="w-14 h-14 bg-light-green rounded-full mt-2"></div>
+              <td className="w-14 h-14 bg-light-green rounded-full mt-2"></td>
               <td className="px-3 py-3">{leader.name}</td>
               <td className="px-3 py-3">{leader.course}</td>
               <td className="px-3 py-3">{leader.points}</td>

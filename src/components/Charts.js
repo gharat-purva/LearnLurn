@@ -10,11 +10,11 @@ const Charts = () => {
           <div className="relative">
             <div 
               className="absolute w-full border-b-2 border-dashed border-yellow ml-4"
-              style={{ top: '1rem', height: '0rem' }} // Adjust height to position the line correctly
+              style={{ top: '1rem', height: '0rem' }} 
             ></div>
             <div 
               className="absolute bg-black text-white text-sm font-bold flex items-center justify-center rounded-full"
-              style={{ top: '-2rem', left: 'calc(50% + 11.6rem)', width: '3rem', height: '3rem' }} // Adjust positioning of the circle
+              style={{ top: '-2rem', left: 'calc(50% + 11.6rem)', width: '3rem', height: '3rem' }}
             >
               32h
             </div>
