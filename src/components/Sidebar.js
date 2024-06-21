@@ -38,15 +38,15 @@ const Sidebar = () => {
             <Link to="/leaderboard" className={`mb-2 ${selectedItem === 3 ? 'text-white' : ''}`}>Leaderboard</Link>
           </li>
           <li className="flex items-center mb-4">
-            <a href="https://learnlurn.netlify.app/" className="hover:text-yellow mb-2">Profile</a>
+            <Link to="/profile" className="hover:text-yellow mb-2">Profile</Link>
           </li>
           <li className={`flex items-center mb-6 pt-3 pl-6 p-1 rounded-xl ${selectedItem === 4 ? 'bg-yellow text-white' : 'hover:bg-gray-200 hover:text-yellow'}`} onClick={() => handleItemClick(4)}>
             <span className="mr-3"><FaGear className="text-xl mb-2 rounded-full" /></span>
-            <a href="https://learnlurn.netlify.app/" className={`mb-2 ${selectedItem === 4 ? 'text-white' : ''}`}>Settings</a>
+            <Link to="/settings" className={`mb-2 ${selectedItem === 4 ? 'text-white' : ''}`}>Settings</Link>
           </li>
           <li className={`flex items-center mb-6 pt-3 pl-6 p-1 rounded-xl ${selectedItem === 5 ? 'bg-yellow text-white' : 'hover:bg-gray-200 hover:text-yellow'}`} onClick={() => handleItemClick(5)}>
             <span className="mr-3"><FaRightFromBracket className="text-xl mb-2 rounded-full" /></span>
-            <a href="https://learnlurn.netlify.app/" className={`mb-2 ${selectedItem === 5 ? 'text-white' : ''}`}>Logout</a>
+            <Link to="/logout" className={`mb-2 ${selectedItem === 5 ? 'text-white' : ''}`}>Logout</Link>
           </li>
         </ul>
       </nav>
