@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FaBook, FaCalendarAlt, FaUsers } from 'react-icons/fa';
 import { FaGear, FaRightFromBracket, FaSquareLetterboxd } from 'react-icons/fa6';
 
@@ -18,23 +19,23 @@ const Sidebar = () => {
       <nav>
         <ul className='text-sidebar-text'>
           <li className="flex items-center mb-4">
-            <a href="https://learnlurn.netlify.app/" className="hover:text-yellow mb-2">MENU</a>
+            <Link to="/" className="hover:text-yellow mb-2">MENU</Link>
           </li>
           <li className={`flex items-center mb-6 pt-3 pl-6 p-1 rounded-xl ${selectedItem === 0 ? 'bg-yellow text-white' : 'hover:bg-gray-200 hover:text-yellow'}`} onClick={() => handleItemClick(0)}>
             <span className="mr-3"><FaSquareLetterboxd className="text-2xl mb-2" /></span>
-            <a href="https://learnlurn.netlify.app/" className={`mb-2 ${selectedItem === 0 ? 'text-white' : ''}`}>Home</a>
+            <Link to="/" className={`mb-2 ${selectedItem === 0 ? 'text-white' : ''}`}>Home</Link>
           </li>
           <li className={`flex items-center mb-6 pt-3 pl-6 p-1 rounded-xl ${selectedItem === 1 ? 'bg-yellow text-white' : 'hover:bg-gray-200 hover:text-yellow'}`} onClick={() => handleItemClick(1)}>
             <span className="mr-3"><FaCalendarAlt className="text-xl mb-2" /></span>
-            <a href="https://learnlurn.netlify.app/" className={`mb-2 ${selectedItem === 1 ? 'text-white' : ''}`}>Calendar</a>
+            <Link to="/calendar" className={`mb-2 ${selectedItem === 1 ? 'text-white' : ''}`}>Calendar</Link>
           </li>
           <li className={`flex items-center mb-6 pt-3 pl-6 p-1 rounded-xl ${selectedItem === 2 ? 'bg-yellow text-white' : 'hover:bg-gray-200 hover:text-yellow'}`} onClick={() => handleItemClick(2)}>
             <span className="mr-3"><FaBook className="text-xl mb-2" /></span>
-            <a href="https://learnlurn.netlify.app/" className={`mb-2 ${selectedItem === 2 ? 'text-white' : ''}`}>Course</a>
+            <Link to="/course" className={`mb-2 ${selectedItem === 2 ? 'text-white' : ''}`}>Course</Link>
           </li>
           <li className={`flex items-center mb-6 pt-3 pl-6 p-1 rounded-xl ${selectedItem === 3 ? 'bg-yellow text-white' : 'hover:bg-gray-200 hover:text-yellow'}`} onClick={() => handleItemClick(3)}>
             <span className="mr-3"><FaUsers className="text-xl mb-2 rounded-full" /></span>
-            <a href="https://learnlurn.netlify.app/" className={`mb-2 ${selectedItem === 3 ? 'text-white' : ''}`}>Leaderboard</a>
+            <Link to="/leaderboard" className={`mb-2 ${selectedItem === 3 ? 'text-white' : ''}`}>Leaderboard</Link>
           </li>
           <li className="flex items-center mb-4">
             <a href="https://learnlurn.netlify.app/" className="hover:text-yellow mb-2">Profile</a>

@@ -1,12 +1,14 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
-import Dashboard from './components/Dashboard';
 
 const App = () => {
   return (
-    <div className="flex font-poppins">
+    <div className="flex">
       <Sidebar />
-      <Dashboard />
+      <div className="flex-1 p-4">
+        <Outlet />
+      </div>
     </div>
   );
 }

@@ -19,7 +19,6 @@ const Dashboard = () => {
         <FaChevronDown className="text-lg my-2 text-sidebar-text" />
       </div>
     </div>
-
       <div className="grid grid-cols-4 gap-4 pr-8 pl-8 ">
         
         <div className="bg-white p-4 rounded-lg ">

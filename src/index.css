@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom CSS for the radial blur effect */
+.body{
+  overflow-x: hidden;
+}
 .radial-blur-bg {
     background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.5));
   }
