@@ -2,9 +2,13 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBook, FaCalendarAlt, FaUsers } from 'react-icons/fa';
 import { FaGear, FaRightFromBracket, FaSquareLetterboxd } from 'react-icons/fa6';
+import logoDesktop from '../assets/logoDesktop.png'; 
+import logoMobile from '../assets/logoMobile.png'; 
+import { useMediaQuery } from 'react-responsive';
 
 const Sidebar = () => {
   const [selectedItem, setSelectedItem] = useState(null);
+  const isMobile = useMediaQuery({ maxWidth: 767 });
 
   const handleItemClick = (index) => {
     setSelectedItem(index);
@@ -12,8 +16,19 @@ const Sidebar = () => {
 
   return (
     <div className="bg-sidebar text-white w-64 min-h-screen p-4 pl-10">
+      {/* Display Logo with white background */}
+      <div className="flex justify-center mb-6 bg-white p-2">
+        <img
+          src={isMobile ? logoMobile : logoDesktop}
+          alt="Logo"
+          className="h-12 w-auto"
+        />
+      </div>
+      
       <div className="text-2xl font-bold mb-6">LearnLurn
-        <div><hr className='flex mt-10 h-px my-8 bg-gray-200 border-0 dark:bg-gray-700' /></div>
+        <div>
+          <hr className='flex mt-10 h-px my-8 bg-gray-200 border-0 dark:bg-gray-700' />
+        </div>
       </div>
       
       <nav>
